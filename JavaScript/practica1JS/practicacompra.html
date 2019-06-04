@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="10 - Multiples Objetos Ikea">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Practica Ikea</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="primerdiv" class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Mi tienda de Ikea</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="#">Catálogo</a>
+            <a class="p-2 text-dark" href="#">Novedades</a>
+            <a class="p-2 text-dark" href="#">Blog</a>
+            <a class="p-2 text-dark" href="#">Contacto</a>
+        </nav>
+        <a class="btn btn-outline-primary" href="#">Registrate</a>
+    </div>
+    <div class="container">
+        <div id="colItems" class="card-deck mb-3 text-center" style="width: 65rem;">
+            <template id="item">  
+                <div class="card mb-4 box-shadow" >
+                    <img class="card-img-top"src=""/>
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title" id="nombre"></h4>
+                        <h5 class="card-text precio" ></h5>
+                        <p class="card-text stock" ></p>
+                        <button class="mt-auto btn btn-lg btn-block btn-primary">Comprar Artículo(s)</button>
+                    </div>               
+                </div>
+            </template>
+        </div>
+        <div class="fixed-bottom alert alert-success invisible" id="cesta">
+        </div>
+    </div>
+    <template id="itemsCesta">
+        <div class="text-justify"><span class="nombre font-italic"></span> <span class="precio"></span> x <span class="cantidad"></span> Unidad(es) <span class="subtotal"></span></div>
+    </template>
+    <script type="application/javascript" src="objetosikea.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
